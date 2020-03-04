@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "One Portal Component Library",
   "main": "index.js",
-  "dependencies": {
-    "lit-element": "^2.2.1"
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^3.20.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
