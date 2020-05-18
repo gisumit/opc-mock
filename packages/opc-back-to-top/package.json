@@ -1,0 +1,24 @@
+{
+  "name": "opc-back-to-top",
+  "version": "0.0.0",
+  "description": "Webcomponent opc-back-to-top following open-wc recommendations",
+  "author": "opc-back-to-top",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "concurrently --kill-others --names tsc,es-dev-server \"npm run tsc:watch\" \"es-dev-server --app-index demo/index.html --node-resolve --open --watch\"",
+    "tsc:watch": "tsc --watch"
+  },
+  "dependencies": {
+    "lit-element": "^2.3.1",
+    "lit-html": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.11.1",
+    "concurrently": "^5.2.0",
+    "es-dev-server": "^1.50.1",
+    "tslib": "^1.13.0",
+    "typescript": "^3.9.2"
+  }
+}

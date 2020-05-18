@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+      scroll-behavior: smooth;
+    }
+
+    .card {
+      background: #cecece;
+      border-radius: 4px;
+      height: 100vh;
+    }
+    button.btn {
+      width: var(--btn--width);
+      height: var(--btn--height);
+      background: var(--btn--bg--color, #e00);
+      border: none;
+      border-radius: var(--btn--all--radius, 50%);
+      color: var(--btn--color, #fff);
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  </style>
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../dist/opc-back-to-top.js';
+
+    render(
+      html`
+        <div class="card"></div>
+        <opc-back-to-top>
+          <a href="#"> normal black to top</a>
+        </opc-back-to-top>
+        <div class="card"></div>
+        <opc-back-to-top style="--btn--height: 42px; --btn--width:42px">
+          <button class="btn">
+            <i class="icon ion-md-arrow-up"></i>
+          </button>
+        </opc-back-to-top>
+        <opc-back-to-top style="--btn--height: 42px; --btn--width:42px">
+          <button class="btn" style="--btn--bg--color:#000">
+            <i class="icon ion-md-arrow-up"></i>
+          </button>
+        </opc-back-to-top>
+        <opc-back-to-top style="--btn--height: 42px; --btn--width:42px">
+          <button class="btn" style="--btn--all--radius: 4px">
+            <i class="icon ion-md-arrow-up"></i>
+          </button>
+        </opc-back-to-top>
+        <opc-back-to-top>
+          <button class="btn" style="
+            --btn--all--radius: 4px;
+            --btn--height: 42px;
+            padding: 0 1rem;
+            --btn--bg--color: #0068ee
+            ">
+            Go to top <i class="icon ion-md-arrow-up"></i>
+          </button>
+        </opc-back-to-top>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
