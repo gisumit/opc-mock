@@ -1,5 +1,5 @@
 {
-  "name": "opc-app-header",
+  "name": "@opc-mock/opc-app-header",
   "version": "0.0.0",
   "description": "Webcomponent opc-app-header following open-wc recommendations",
   "author": "opc-app-header",

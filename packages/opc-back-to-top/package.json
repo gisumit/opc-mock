@@ -1,5 +1,5 @@
 {
-  "name": "opc-back-to-top",
+  "name": "@opc-mock/opc-back-to-top",
   "version": "0.0.0",
   "description": "Webcomponent opc-back-to-top following open-wc recommendations",
   "author": "opc-back-to-top",

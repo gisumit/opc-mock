@@ -1,5 +1,5 @@
 {
-  "name": "one-portal-component-library",
+  "name": "@opc-mock/one-portal-component-library",
   "version": "0.0.1",
   "description": "One Portal Component Library",
   "main": "index.js",
