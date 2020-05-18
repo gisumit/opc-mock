@@ -1,6 +1,6 @@
 {
   "name": "@opc-mock/opc-app-header",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Webcomponent opc-app-header following open-wc recommendations",
   "author": "opc-app-header",
   "license": "MIT",
